@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# Washtop Laundry Express
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website ini dibuat untuk membantu UMKM lokal di Singaraja Bali yang bergerak di bidang jasa cuci pakaian atau laundry agar dapat semakin berkembang dan mengikuti persaingan pasar yang Go Digital.
 
-Currently, two official plugins are available:
+## Instalasi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Kode program untuk website ini dapat dicoba dan digunakan kembali sesuai dengan langkah-langkah berikut.
 
-## Expanding the ESLint configuration
+- Clone the project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+  git clone https://github.com/odetv/washtop-laundry.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Go to the project directory
+
+```bash
+  cd washtop-laundry
+```
+
+- Install dependencies
+
+```bash
+  npm install
+```
+
+- Start the server
+
+```bash
+  npm run dev
+```
+
+- Build the project
+
+```bash
+  npm run build
+```
+
+## Environment Variabel
+
+Untuk dapat menjalankan project pada firebase dibutuhkan token yang didapat dari console firebase dan menambahkan variabel `FIREBASE_TOKEN` pada Action GitHub.
+
+## Teknologi
+
+**Client:** Vite, React, TypeScript, TailwindCSS
+
+**Server:** Firebase
+
+## Demo
+
+https://washtop-laundry.web.app
