@@ -14,13 +14,13 @@ jobs:
         run: npm install
       - name: Build
         env:
-          CI: true
+          CI: false
         run: npm run build
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: build
+          path: dist
   deploy:
     name: Deploy
     needs: build
@@ -32,7 +32,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: build
+          path: dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
