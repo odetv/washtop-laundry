@@ -38,9 +38,9 @@ const callsToAction = [
   { name: "Hubungi Kami", href: "/#kontak", icon: PhoneIcon },
 ];
 
-function classNames(...classes) {
+const classNames = (...classes: string[]) => {
   return classes.filter(Boolean).join(" ");
-}
+};
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
