@@ -4,7 +4,7 @@ Website ini dibuat untuk membantu UMKM lokal di Singaraja Bali yang bergerak di 
 
 ## Instalasi
 
-Kode program untuk website ini dapat dicoba dan digunakan kembali sesuai dengan langkah-langkah berikut.
+Kode program untuk website ini dapat dicoba dan digunakan kembali sesuai dengan langkah-langkah berikut (Dapat menggunakan NPM, PNPM, atau Yarn).
 
 - Clone the project
 
