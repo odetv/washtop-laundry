@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { Fragment, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -44,6 +44,18 @@ const classNames = (...classes: string[]) => {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const [headerText, setHeaderText] = useState("Login");
+  const location = useLocation();
+
+  useEffect(() => {
+    // Mengganti teks header sesuai dengan path URL
+    if (location.pathname === "/login") {
+      setHeaderText("Daftar");
+    } else if (location.pathname === "/daftar") {
+      setHeaderText("Login");
+    }
+  }, [location.pathname]);
 
   return (
     <header className="backdrop-blur-sm bg-white/30 fixed top-0 w-full border-b">
@@ -155,10 +167,10 @@ export default function Header() {
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            to="/login"
+            to={location.pathname === "/login" ? "/daftar" : "/login"}
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Login <span aria-hidden="true">&rarr;</span>
+            {headerText} <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -240,10 +252,10 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <Link
-                  to="/login"
+                  to={location.pathname === "/login" ? "/daftar" : "/login"}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Login <span aria-hidden="true">&rarr;</span>
+                  {headerText} <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>
             </div>

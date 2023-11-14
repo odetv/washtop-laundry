@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import LandingPage from "./pages/LandingPage";
 import PageHandler from "./components/PageHandler";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import LandingPage from "./pages/LandingPage";
 
 function ScrollToTop() {
   const location = useLocation();
@@ -22,6 +24,8 @@ function App() {
       <Routes>
         <Route path="*" element={<PageHandler />} />
         <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/daftar" element={<SignUp />} />
       </Routes>
       <Footer />
     </Router>
