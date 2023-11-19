@@ -1,4 +1,4 @@
-name: Firebase Deployment
+name: Deployment
 on:
   push:
     branches:
@@ -45,13 +45,12 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
-
     - name: 📂 Sync files
       uses: Burnett01/rsync-deployments@6.0.0
       with:
         switches: -avzr --delete --exclude=".git" --exclude=".github"
         path: /
-        remote_path: ${{ secrets.DEPLOY_PATH }}
+        remote_path: /home/momentki/washtop.momentkitabali.my.id/
         remote_host: momentkitabali.my.id
-        remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_user: momentki
         remote_key: ${{ secrets.DEPLOY_KEY }}
