@@ -1,4 +1,4 @@
-name: C-Panel Deployment
+name: CPanel Deployment
 on:
   push:
     branches:
@@ -19,7 +19,6 @@ jobs:
         protocol: ftps
         port: ${{ secrets.FTP_PORT }}
         local-dir: dist/
-        server-dir: /home/momentki/washtop.momentkitabali.my.id/
         exclude: .git*
           - .git*/**
           - .github
