@@ -18,6 +18,8 @@ jobs:
         password: ${{ secrets.FTP_PASS }}
         protocol: ftps
         port: ${{ secrets.FTP_PORT }}
+        local-dir: dist/
+        server-dir: /home/momentki/washtop.momentkitabali.my.id/
         exclude: .git*
           - .git*/**
           - .github
