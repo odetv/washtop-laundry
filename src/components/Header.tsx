@@ -6,11 +6,7 @@ import {
   CheckCircleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import Logo from "../assets/images/logo/logo-washtop.png";
 
 const products = [
@@ -35,7 +31,6 @@ const products = [
 ];
 const callsToAction = [
   { name: "Testimoni", href: "/#testimoni", icon: PlayCircleIcon },
-  { name: "Hubungi Kami", href: "/#kontak", icon: PhoneIcon },
 ];
 
 const classNames = (...classes: string[]) => {
@@ -58,7 +53,7 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <header className="backdrop-blur-sm bg-white/30 fixed top-0 w-full border-b">
+    <header className="backdrop-blur-sm bg-white/30 fixed top-0 w-full border-b z-10">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -128,7 +123,7 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -147,10 +142,10 @@ export default function Header() {
             </Transition>
           </Popover>
           <Link
-            to="/#harga"
+            to="/#keunggulan"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Harga
+            Keunggulan
           </Link>
           <Link
             to="/#lokasi"
@@ -232,10 +227,10 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <Link
-                  to="/#harga"
+                  to="/#keunggulan"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Harga
+                  Keunggulan
                 </Link>
                 <Link
                   to="/#lokasi"

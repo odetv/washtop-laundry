@@ -1,9 +1,9 @@
+import Produk from "../components/Produk.tsx";
+
 function LandingPage() {
   return (
-    <section className="">
-      <h1 className="text-center font-bold text-3xl mb-6 mt-28">
-        Washtop Laundry Express
-      </h1>
+    <section className="px-4">
+      <Produk />
     </section>
   );
 }
