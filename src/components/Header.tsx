@@ -59,9 +59,9 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link to="/#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <img className="h-8 w-auto" src={Logo} alt="" />
-          </Link>
+          </a>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -73,12 +73,12 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link
-            to="/#"
+          <a
+            href="/#"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Beranda
-          </Link>
+          </a>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Produk
@@ -111,13 +111,13 @@ export default function Header() {
                         />
                       </div>
                       <div className="flex-auto">
-                        <Link
-                          to={item.href}
+                        <a
+                          href={item.href}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
-                        </Link>
+                        </a>
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
@@ -141,24 +141,24 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <Link
-            to="/#keunggulan"
+          <a
+            href="/#keunggulan"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Keunggulan
-          </Link>
-          <Link
-            to="/#lokasi"
+          </a>
+          <a
+            href="/#lokasi"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Lokasi
-          </Link>
-          <Link
-            to="/#kontak"
+          </a>
+          <a
+            href="/#kontak"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Kontak
-          </Link>
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
@@ -178,9 +178,9 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link to="/#" className="-m-1.5 p-1.5">
+            <a href="/#" className="-m-1.5 p-1.5">
               <img className="h-8 w-auto" src={Logo} alt="" />
-            </Link>
+            </a>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -192,12 +192,12 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link
-                  to="/#"
+                <a
+                  href="/#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Beranda
-                </Link>
+                </a>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
@@ -226,24 +226,24 @@ export default function Header() {
                     </>
                   )}
                 </Disclosure>
-                <Link
-                  to="/#keunggulan"
+                <a
+                  href="/#keunggulan"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Keunggulan
-                </Link>
-                <Link
-                  to="/#lokasi"
+                </a>
+                <a
+                  href="/#lokasi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Lokasi
-                </Link>
-                <Link
-                  to="/#kontak"
+                </a>
+                <a
+                  href="/#kontak"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Kontak
-                </Link>
+                </a>
               </div>
               <div className="py-6">
                 <Link
