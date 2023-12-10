@@ -10,7 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins"],
+        sans: ["Poppins", "sans-serif"],
+      },
+      nextui: {
+        fontFamily: "Poppins, sans-serif",
       },
     },
   },
