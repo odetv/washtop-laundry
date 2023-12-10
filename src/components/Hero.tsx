@@ -6,6 +6,7 @@ import {
   PopoverContent,
 } from "@nextui-org/react";
 import { useState, useEffect } from "react";
+import Typed from "react-typed";
 
 type Days =
   | "Senin"
@@ -62,7 +63,7 @@ const daysMapping: Record<Days, ServiceTime> = {
 
 function Hero() {
   const [isServiceOpen, setIsServiceOpen] = useState(false);
-
+  const texts = ["Nyaman.", "Cepat.", "Berkualitas."]; // Nyaman, Berkualitas, dan Cepat.
   useEffect(() => {
     const daysID: Days[] = [
       "Senin",
@@ -115,12 +116,22 @@ function Hero() {
           Kini Washtop Laundry Express hadir di Singaraja!
         </p>
         <p className="text-base pb-6 tracking-wide">
-          Dapatkan kualitas laundry terbaik hanya dari Kami. Kami hadir
-          memberikan layanan yang Nyaman, Berkualitas, dan Cepat.
+          Dapatkan kualitas laundry terbaik hanya dari Kami. Kami hadir dengan
+          memberikan Layanan yang{" "}
+          <Typed
+            className="bg-blue-200 font-bold text-xl"
+            strings={texts}
+            typeSpeed={50}
+            backSpeed={50}
+            loop
+          />
         </p>
-
         <div className="flex gap-2">
-          <Button color="primary" radius="sm">
+          <Button
+            className="text-white font-semibold"
+            color="primary"
+            radius="sm"
+          >
             <a href="#testimoni">Testimoni</a>
           </Button>
           <Popover showArrow backdrop="opaque" placement="bottom">
@@ -128,7 +139,7 @@ function Hero() {
               <Button
                 radius="sm"
                 color={isServiceOpen ? "success" : "danger"}
-                className="text-white"
+                className="text-white font-semibold"
               >
                 {isServiceOpen ? (
                   <p id="tombol-washtop-buka">Washtop Buka</p>
@@ -149,12 +160,12 @@ function Hero() {
                   <div id="info-washtop-buka" className="text-tiny">
                     {isServiceOpen ? (
                       <>
-                        <p>Laundry Kami sudah Buka!</p>
+                        <p>Laundry Kami Sudah Buka!</p>
                         <p>Dari Pukul 08.00 - 17.00 WITA</p>
                       </>
                     ) : (
                       <>
-                        <p>Laundry Kami sudah Tutup!</p>
+                        <p>Laundry Kami Sudah Tutup!</p>
                         <p>Buka kembali dari Pukul 08.00 - 17.00 WITA</p>
                       </>
                     )}
