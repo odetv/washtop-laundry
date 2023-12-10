@@ -12,25 +12,25 @@ import Logo from "../assets/images/logo/logo-washtop.png";
 const products = [
   {
     name: "Paket Satuan",
-    description: "Lorem Ipsum has been the industry",
-    href: "/#produk",
+    description: "Lihat Daftar Paket Laundry Satuan",
+    href: "/#produksatuan",
     icon: CheckCircleIcon,
   },
   {
     name: "Paket Reguler",
-    description: "Lorem Ipsum has been the industry",
-    href: "/#produk",
+    description: "Lihat Daftar Paket Laundry Reguler",
+    href: "/#produkreguler",
     icon: CheckCircleIcon,
   },
   {
     name: "Paket Express",
-    description: "Lorem Ipsum has been the industry",
-    href: "/#produk",
+    description: "Lihat Daftar Paket Laundry Express",
+    href: "/#produkexpress",
     icon: CheckCircleIcon,
   },
 ];
 const callsToAction = [
-  { name: "Testimoni", href: "/#testimoni", icon: PlayCircleIcon },
+  { name: "Lihat Semua Produk", href: "/#produk", icon: PlayCircleIcon },
 ];
 
 const classNames = (...classes: string[]) => {
@@ -44,7 +44,6 @@ export default function Header() {
   const location = useLocation();
 
   useEffect(() => {
-    // Mengganti teks header sesuai dengan path URL
     if (location.pathname === "/login") {
       setHeaderText("Daftar");
     } else if (location.pathname === "/daftar") {
@@ -59,7 +58,7 @@ export default function Header() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <a href="/#" className="-m-1.5 p-1.5">
             <img className="h-8 w-auto" src={Logo} alt="" />
           </a>
         </div>
@@ -172,7 +171,11 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="/#" className="-m-1.5 p-1.5">
+            <a
+              onClick={() => setMobileMenuOpen(false)}
+              href="/#"
+              className="-m-1.5 p-1.5"
+            >
               <img className="h-8 w-auto" src={Logo} alt="" />
             </a>
             <button
@@ -187,6 +190,7 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -211,6 +215,7 @@ export default function Header() {
                             key={item.name}
                             as="a"
                             href={item.href}
+                            onClick={() => setMobileMenuOpen(false)}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
@@ -221,12 +226,14 @@ export default function Header() {
                   )}
                 </Disclosure>
                 <a
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/#keunggulan"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Keunggulan
                 </a>
                 <a
+                  onClick={() => setMobileMenuOpen(false)}
                   href="/#info"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
@@ -235,6 +242,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   to={location.pathname === "/login" ? "/daftar" : "/login"}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
