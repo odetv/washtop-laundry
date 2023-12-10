@@ -25,8 +25,8 @@ function Footer() {
               Tentang Kami
             </h3>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Dapatkan kualitas laundry terbaik hanya dari Kami. Kami hadir
+              memberikan layanan yang Nyaman, Berkualitas, dan Cepat.
             </p>
           </div>
           <div className="space-y-3">
@@ -47,6 +47,11 @@ function Footer() {
               <li>
                 <Link rel="noopener noreferrer" to="/#produk">
                   Paket Express
+                </Link>
+              </li>
+              <li>
+                <Link rel="noopener noreferrer" to="/#testimoni">
+                  Testimoni
                 </Link>
               </li>
             </ul>

@@ -97,14 +97,14 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white/80 shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white/90 shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-blue-800">
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-blue-500">
                         <item.icon
                           className="h-6 w-6 text-gray-600 group-hover:text-white"
                           aria-hidden="true"
@@ -128,7 +128,7 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-blue-800 "
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-blue-500 "
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400 "
@@ -148,16 +148,10 @@ export default function Header() {
             Keunggulan
           </a>
           <a
-            href="/#lokasi"
+            href="/#info"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Lokasi
-          </a>
-          <a
-            href="/#kontak"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Kontak
+            Informasi
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -233,16 +227,10 @@ export default function Header() {
                   Keunggulan
                 </a>
                 <a
-                  href="/#lokasi"
+                  href="/#info"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Lokasi
-                </a>
-                <a
-                  href="/#kontak"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Kontak
+                  Informasi
                 </a>
               </div>
               <div className="py-6">

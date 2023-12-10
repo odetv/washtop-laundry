@@ -184,7 +184,7 @@ export default function App() {
                       className="bg-blue-200"
                       onPress={() => openModal(item)}
                     >
-                      Order
+                      Selengkapnya
                     </Button>
                   </div>
                 </CardFooter>
@@ -215,7 +215,7 @@ export default function App() {
                       className="bg-blue-200"
                       onPress={() => openModal(item)}
                     >
-                      Order
+                      Selengkapnya
                     </Button>
                   </div>
                 </CardFooter>
@@ -246,7 +246,7 @@ export default function App() {
                       className="bg-blue-200"
                       onPress={() => openModal(item)}
                     >
-                      Order
+                      Selengkapnya
                     </Button>
                   </div>
                 </CardFooter>
