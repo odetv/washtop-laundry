@@ -608,7 +608,7 @@ export default function App() {
                     </div>
                   </CardBody>
 
-                  <CardFooter className="text-xs justify-between sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  <CardFooter className="text-sm justify-between">
                     <b className="text-left">{item.title}</b>
                     <div className="flex items-center gap-2">
                       <p className="text-default-500 text-left">{item.price}</p>
@@ -679,7 +679,7 @@ export default function App() {
                       </Chip>
                     </div>
                   </CardBody>
-                  <CardFooter className="text-xs justify-between sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  <CardFooter className="text-sm justify-between">
                     <b className="text-left">{item.title}</b>
                     <div className="flex items-center gap-2">
                       <p className="text-default-500 text-left">{item.price}</p>
@@ -742,7 +742,7 @@ export default function App() {
                       </Chip>
                     </div>
                   </CardBody>
-                  <CardFooter className="text-xs justify-between sm:text-sm md:text-sm lg:text-sm xl:text-sm">
+                  <CardFooter className="text-sm justify-between">
                     <b className="text-left">{item.title}</b>
                     <div className="flex items-center gap-2">
                       <p className="text-default-500 text-left">{item.price}</p>
