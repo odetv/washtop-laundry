@@ -16,6 +16,34 @@ import {
   Pagination,
 } from "@nextui-org/react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import Picsbantal from "../assets/images/produk/bantal.jpg";
+import Picsbedcoverbesar from "../assets/images/produk/bed-cover-besar.jpg";
+import Picsbedcoverkecil from "../assets/images/produk/bed-cover-kecil.jpg";
+import Picsbedcoversedang from "../assets/images/produk/bed-cover-sedang.jpg";
+import Picsbonekabesar from "../assets/images/produk/boneka-besar.jpg";
+import Picsbonekakecil from "../assets/images/produk/boneka-kecil.jpg";
+import Picsbonekasedang from "../assets/images/produk/boneka-sedang.jpg";
+import Picsgordenbesar from "../assets/images/produk/gorden-besar.jpg";
+import Picsgordenkecil from "../assets/images/produk/gorden-kecil.jpg";
+import Picsgordensedang from "../assets/images/produk/gorden-sedang.jpg";
+import Picsguling from "../assets/images/produk/guling.jpg";
+import Picskarpetbesar from "../assets/images/produk/karpet-besar.jpg";
+import Picskarpetkecil from "../assets/images/produk/karpet-kecil.jpg";
+import Picskarpetsedang from "../assets/images/produk/karpet-sedang.jpg";
+import Picskeset from "../assets/images/produk/keset.jpg";
+import Picsselimutbesar from "../assets/images/produk/selimut-besar.jpg";
+import Picsselimutkecil from "../assets/images/produk/selimut-kecil.jpg";
+import Picsselimutsedang from "../assets/images/produk/selimut-sedang.jpg";
+import Picssepraikecil from "../assets/images/produk/seprai-kecil.jpg";
+import Picssepraibesar from "../assets/images/produk/seprai-besar.jpg";
+import Picstaskecil from "../assets/images/produk/tas-kecil.jpg";
+import Picstassedang from "../assets/images/produk/tas-sedang.jpg";
+import Picstasbesar from "../assets/images/produk/tas-besar.jpg";
+import Picstopi from "../assets/images/produk/topi.jpg";
+import Picssetrika from "../assets/images/produk/setrika.jpg";
+import Picscucikering from "../assets/images/produk/cuci-kering.jpg";
+import Picsreguler2hari from "../assets/images/produk/reguler-2-hari.jpg";
+import Picsexpress from "../assets/images/produk/express.jpg";
 
 export default function App() {
   const [displayAll, setDisplayAll] = useState(false);
@@ -46,7 +74,7 @@ export default function App() {
     {
       title: "Bed Cover Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/311",
+      img: Picsbedcoverbesar,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Bed Cover Besar",
       filter: "2hari",
@@ -54,7 +82,7 @@ export default function App() {
     {
       title: "Bed Cover Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/312",
+      img: Picsbedcoversedang,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Bed Cover Sedang",
       filter: "2hari",
@@ -62,7 +90,7 @@ export default function App() {
     {
       title: "Bed Cover Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/313",
+      img: Picsbedcoverkecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Bed Cover Kecil",
       filter: "2hari",
@@ -70,7 +98,7 @@ export default function App() {
     {
       title: "Selimut Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/314",
+      img: Picsselimutbesar,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Selimut Besar",
       filter: "2hari",
@@ -78,7 +106,7 @@ export default function App() {
     {
       title: "Selimut Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/315",
+      img: Picsselimutsedang,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Selimut Sedang",
       filter: "2hari",
@@ -86,7 +114,7 @@ export default function App() {
     {
       title: "Selimut Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/316",
+      img: Picsselimutkecil,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Selimut Kecil",
       filter: "2hari",
@@ -94,7 +122,7 @@ export default function App() {
     {
       title: "Boneka Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/317",
+      img: Picsbonekabesar,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Boneka Besar",
       filter: "2hari",
@@ -102,7 +130,7 @@ export default function App() {
     {
       title: "Boneka Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/318",
+      img: Picsbonekasedang,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Boneka Sedang",
       filter: "2hari",
@@ -110,7 +138,7 @@ export default function App() {
     {
       title: "Boneka Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/319",
+      img: Picsbonekakecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Boneka Kecil",
       filter: "2hari",
@@ -118,7 +146,7 @@ export default function App() {
     {
       title: "Sprei Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/320",
+      img: Picssepraibesar,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Sprei Besar",
       filter: "2hari",
@@ -126,7 +154,7 @@ export default function App() {
     {
       title: "Sprei Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/321",
+      img: Picssepraikecil,
       price: "Rp. 8.000",
       desc: "Paket Laundry Satuan Sprei Kecil",
       filter: "2hari",
@@ -134,7 +162,7 @@ export default function App() {
     {
       title: "Tas Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/322",
+      img: Picstasbesar,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Tas Besar",
       filter: "2hari",
@@ -142,7 +170,7 @@ export default function App() {
     {
       title: "Tas Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/323",
+      img: Picstassedang,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Tas Sedang",
       filter: "2hari",
@@ -150,7 +178,7 @@ export default function App() {
     {
       title: "Tas Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/324",
+      img: Picstaskecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Tas Kecil",
       filter: "2hari",
@@ -158,7 +186,7 @@ export default function App() {
     {
       title: "Topi",
       badge: "2 Hari",
-      img: "https://picsum.photos/325",
+      img: Picstopi,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Topi",
       filter: "2hari",
@@ -166,7 +194,7 @@ export default function App() {
     {
       title: "Keset",
       badge: "2 Hari",
-      img: "https://picsum.photos/326",
+      img: Picskeset,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Keset",
       filter: "2hari",
@@ -174,7 +202,7 @@ export default function App() {
     {
       title: "Gorden Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/327",
+      img: Picsgordenbesar,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Gorden Besar",
       filter: "2hari",
@@ -182,7 +210,7 @@ export default function App() {
     {
       title: "Gorden Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/328",
+      img: Picsgordensedang,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Gorden Sedang",
       filter: "2hari",
@@ -190,7 +218,7 @@ export default function App() {
     {
       title: "Gorden Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/329",
+      img: Picsgordenkecil,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Gorden Kecil",
       filter: "2hari",
@@ -198,7 +226,7 @@ export default function App() {
     {
       title: "Karpet Besar",
       badge: "2 Hari",
-      img: "https://picsum.photos/330",
+      img: Picskarpetbesar,
       price: "Rp. 30.000",
       desc: "Paket Laundry Satuan Karpet Besar",
       filter: "2hari",
@@ -206,7 +234,7 @@ export default function App() {
     {
       title: "Karpet Sedang",
       badge: "2 Hari",
-      img: "https://picsum.photos/331",
+      img: Picskarpetsedang,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Karpet Sedang",
       filter: "2hari",
@@ -214,7 +242,7 @@ export default function App() {
     {
       title: "Karpet Kecil",
       badge: "2 Hari",
-      img: "https://picsum.photos/332",
+      img: Picskarpetkecil,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Karpet Kecil",
       filter: "2hari",
@@ -222,7 +250,7 @@ export default function App() {
     {
       title: "Bantal",
       badge: "2 Hari",
-      img: "https://picsum.photos/333",
+      img: Picsbantal,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Bantal",
       filter: "2hari",
@@ -230,7 +258,7 @@ export default function App() {
     {
       title: "Guling",
       badge: "2 Hari",
-      img: "https://picsum.photos/334",
+      img: Picsguling,
       price: "Rp. 10.000",
       desc: "Paket Laundry Satuan Guling",
       filter: "2hari",
@@ -239,7 +267,7 @@ export default function App() {
     {
       title: "Bed Cover Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/335",
+      img: Picsbedcoverbesar,
       price: "Rp. 30.000",
       desc: "Paket Laundry Satuan Bed Cover Besar",
       filter: "6jam",
@@ -247,7 +275,7 @@ export default function App() {
     {
       title: "Bed Cover Sedang",
       badge: "6 Jam",
-      img: "https://picsum.photos/336",
+      img: Picsbedcoversedang,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Bed Cover Sedang",
       filter: "6jam",
@@ -255,7 +283,7 @@ export default function App() {
     {
       title: "Bed Cover Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/337",
+      img: Picsbedcoverkecil,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Bed Cover Kecil",
       filter: "6jam",
@@ -263,7 +291,7 @@ export default function App() {
     {
       title: "Selimut Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/338",
+      img: Picsselimutbesar,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Selimut Besar",
       filter: "6jam",
@@ -271,7 +299,7 @@ export default function App() {
     {
       title: "Selimut Sedang",
       badge: "6 Jam",
-      img: "https://picsum.photos/339",
+      img: Picsselimutsedang,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Selimut Sedang",
       filter: "6jam",
@@ -279,7 +307,7 @@ export default function App() {
     {
       title: "Selimut Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/340",
+      img: Picsselimutkecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Selimut Kecil",
       filter: "6jam",
@@ -287,7 +315,7 @@ export default function App() {
     {
       title: "Boneka Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/341",
+      img: Picsbonekabesar,
       price: "Rp. 30.000",
       desc: "Paket Laundry Satuan Boneka Besar",
       filter: "6jam",
@@ -295,7 +323,7 @@ export default function App() {
     {
       title: "Boneka Sedang",
       badge: "6 Jam",
-      img: "https://picsum.photos/342",
+      img: Picsbonekasedang,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Boneka Sedang",
       filter: "6jam",
@@ -303,7 +331,7 @@ export default function App() {
     {
       title: "Boneka Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/343",
+      img: Picsbonekakecil,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Boneka Kecil",
       filter: "6jam",
@@ -311,7 +339,7 @@ export default function App() {
     {
       title: "Sprei Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/344",
+      img: Picssepraibesar,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Sprei Besar",
       filter: "6jam",
@@ -319,7 +347,7 @@ export default function App() {
     {
       title: "Sprei Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/345",
+      img: Picssepraikecil,
       price: "Rp. 12.000",
       desc: "Paket Laundry Satuan Sprei Kecil",
       filter: "6jam",
@@ -327,7 +355,7 @@ export default function App() {
     {
       title: "Tas Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/346",
+      img: Picstasbesar,
       price: "Rp. 30.000",
       desc: "Paket Laundry Satuan Tas Besar",
       filter: "6jam",
@@ -335,7 +363,7 @@ export default function App() {
     {
       title: "Tas Sedang",
       badge: "6 Jam",
-      img: "https://picsum.photos/347",
+      img: Picstassedang,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Tas Sedang",
       filter: "6jam",
@@ -343,7 +371,7 @@ export default function App() {
     {
       title: "Tas Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/348",
+      img: Picstaskecil,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Tas Kecil",
       filter: "6jam",
@@ -351,7 +379,7 @@ export default function App() {
     {
       title: "Topi",
       badge: "6 Jam",
-      img: "https://picsum.photos/349",
+      img: Picstopi,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Topi",
       filter: "6jam",
@@ -359,7 +387,7 @@ export default function App() {
     {
       title: "Gorden Besar",
       badge: "6 Jam",
-      img: "https://picsum.photos/350",
+      img: Picsgordenbesar,
       price: "Rp. 25.000",
       desc: "Paket Laundry Satuan Gorden Besar",
       filter: "6jam",
@@ -367,7 +395,7 @@ export default function App() {
     {
       title: "Gorden Sedang",
       badge: "6 Jam",
-      img: "https://picsum.photos/351",
+      img: Picsgordensedang,
       price: "Rp. 20.000",
       desc: "Paket Laundry Satuan Gorden Sedang",
       filter: "6jam",
@@ -375,7 +403,7 @@ export default function App() {
     {
       title: "Gorden Kecil",
       badge: "6 Jam",
-      img: "https://picsum.photos/352",
+      img: Picsgordenkecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Gorden Kecil",
       filter: "6jam",
@@ -384,7 +412,7 @@ export default function App() {
     {
       title: "Bed Cover Besar",
       badge: "3 Jam",
-      img: "https://picsum.photos/353",
+      img: Picsbedcoverbesar,
       price: "Rp. 33.000",
       desc: "Paket Laundry Satuan Bed Cover Besar",
       filter: "3jam",
@@ -392,7 +420,7 @@ export default function App() {
     {
       title: "Bed Cover Sedang",
       badge: "3 Jam",
-      img: "https://picsum.photos/354",
+      img: Picsbedcoversedang,
       price: "Rp. 28.000",
       desc: "Paket Laundry Satuan Bed Cover Sedang",
       filter: "3jam",
@@ -400,7 +428,7 @@ export default function App() {
     {
       title: "Bed Cover Kecil",
       badge: "3 Jam",
-      img: "https://picsum.photos/355",
+      img: Picsbedcoverkecil,
       price: "Rp. 23.000",
       desc: "Paket Laundry Satuan Bed Cover Kecil",
       filter: "3jam",
@@ -408,7 +436,7 @@ export default function App() {
     {
       title: "Selimut Besar",
       badge: "3 Jam",
-      img: "https://picsum.photos/356",
+      img: Picsselimutbesar,
       price: "Rp. 28.000",
       desc: "Paket Laundry Satuan Selimut Besar",
       filter: "3jam",
@@ -416,7 +444,7 @@ export default function App() {
     {
       title: "Selimut Sedang",
       badge: "3 Jam",
-      img: "https://picsum.photos/357",
+      img: Picsselimutsedang,
       price: "Rp. 23.000",
       desc: "Paket Laundry Satuan Selimut Sedang",
       filter: "3jam",
@@ -424,7 +452,7 @@ export default function App() {
     {
       title: "Selimut Kecil",
       badge: "3 Jam",
-      img: "https://picsum.photos/358",
+      img: Picsselimutkecil,
       price: "Rp. 18.000",
       desc: "Paket Laundry Satuan Selimut Kecil",
       filter: "3jam",
@@ -432,7 +460,7 @@ export default function App() {
     {
       title: "Sprei Besar",
       badge: "3 Jam",
-      img: "https://picsum.photos/359",
+      img: Picssepraibesar,
       price: "Rp. 18.000",
       desc: "Paket Laundry Satuan Sprei Besar",
       filter: "3jam",
@@ -440,7 +468,7 @@ export default function App() {
     {
       title: "Sprei Kecil",
       badge: "3 Jam",
-      img: "https://picsum.photos/360",
+      img: Picssepraikecil,
       price: "Rp. 15.000",
       desc: "Paket Laundry Satuan Sprei Kecil",
       filter: "3jam",
@@ -448,7 +476,7 @@ export default function App() {
     {
       title: "Tas Besar",
       badge: "3 Jam",
-      img: "https://picsum.photos/361",
+      img: Picstasbesar,
       price: "Rp. 33.000",
       desc: "Paket Laundry Satuan Tas Besar",
       filter: "3jam",
@@ -456,7 +484,7 @@ export default function App() {
     {
       title: "Tas Sedang",
       badge: "3 Jam",
-      img: "https://picsum.photos/362",
+      img: Picstassedang,
       price: "Rp. 28.000",
       desc: "Paket Laundry Satuan Tas Sedang",
       filter: "3jam",
@@ -464,7 +492,7 @@ export default function App() {
     {
       title: "Tas Kecil",
       badge: "3 Jam",
-      img: "https://picsum.photos/363",
+      img: Picstaskecil,
       price: "Rp. 23.000",
       desc: "Paket Laundry Satuan Tas Kecil",
       filter: "3jam",
@@ -472,7 +500,7 @@ export default function App() {
     {
       title: "Topi",
       badge: "3 Jam",
-      img: "https://picsum.photos/364",
+      img: Picstopi,
       price: "Rp. 18.000",
       desc: "Paket Laundry Satuan Topi",
       filter: "3jam",
@@ -483,7 +511,7 @@ export default function App() {
     {
       title: "Reguler 2 Hari",
       badge: "2 Hari",
-      img: "https://picsum.photos/421",
+      img: Picsreguler2hari,
       price: "Rp. 6.000/Kg",
       desc: "Paket Laundry Reguler 2 Hari (Minimal 2 Kg)",
       filter: "2hari",
@@ -491,7 +519,7 @@ export default function App() {
     {
       title: "Cuci Kering",
       badge: "2 Hari",
-      img: "https://picsum.photos/422",
+      img: Picscucikering,
       price: "Rp. 4.000/Kg",
       desc: "Paket Laundry Reguler Cuci Kering (Minimal 3 Kg)",
       filter: "2hari",
@@ -499,7 +527,7 @@ export default function App() {
     {
       title: "Setrika",
       badge: "2 Hari",
-      img: "https://picsum.photos/423",
+      img: Picssetrika,
       price: "Rp. 5.000/Kg",
       desc: "Paket Laundry Reguler Setrika (Minimal 3 Kg)",
       filter: "2hari",
@@ -510,7 +538,7 @@ export default function App() {
     {
       title: "Express 1 Hari",
       badge: "1 Hari",
-      img: "https://picsum.photos/531",
+      img: Picsexpress,
       price: "Rp. 8.000/Kg",
       desc: "Paket Laundry Express 1 Hari (Minimal 2 Kg)",
       filter: "1hari",
@@ -518,7 +546,7 @@ export default function App() {
     {
       title: "Express 6 Jam",
       badge: "6 Jam",
-      img: "https://picsum.photos/532",
+      img: Picsexpress,
       price: "Rp. 10.000/Kg",
       desc: "Paket Laundry Express 6 Jam (Minimal 2 Kg)",
       filter: "6jam",
@@ -526,7 +554,7 @@ export default function App() {
     {
       title: "Express 3 Jam",
       badge: "3 Jam",
-      img: "https://picsum.photos/533",
+      img: Picsexpress,
       price: "Rp. 12.000/Kg",
       desc: "Paket Laundry Express 3 Jam (Minimal 2 Kg)",
       filter: "3jam",
