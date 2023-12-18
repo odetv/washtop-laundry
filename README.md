@@ -21,7 +21,7 @@ Kode program untuk website ini dapat dicoba dan digunakan kembali sesuai dengan 
 - Install dependencies
 
 ```bash
-  npm install
+  npm install --save --f
 ```
 
 - Start the server
