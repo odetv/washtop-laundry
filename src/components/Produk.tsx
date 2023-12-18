@@ -575,7 +575,7 @@ export default function App() {
   return (
     <div id="produk" className="flex max-w-7xl mx-auto flex-col pb-28">
       <h1 className="text-center font-bold text-3xl mb-6">
-        Paket Washtop Laundry Express
+        Paket Laundry Kami
       </h1>
       <Tabs
         className="flex justify-center pb-2"
@@ -652,7 +652,7 @@ export default function App() {
                 </Card>
               ))}
           </div>
-          <div className="flex items-center justify-center pt-12 pb-6 gap-2">
+          <div className="flex items-center justify-center pt-12 gap-2">
             <Pagination
               className="z-0"
               isCompact

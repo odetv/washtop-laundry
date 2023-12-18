@@ -1,12 +1,16 @@
 import {
   Button,
-  Image,
   Popover,
   PopoverTrigger,
   PopoverContent,
 } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import Typed from "react-typed";
+import Picshero1 from "../assets/images/hero/hero-1.jpg";
+import Picshero2 from "../assets/images/hero/hero-2.jpg";
+import Picshero3 from "../assets/images/hero/hero-3.jpg";
+import Picshero4 from "../assets/images/hero/hero-4.jpg";
+import Picshero5 from "../assets/images/hero/hero-5.jpg";
 
 type Days =
   | "Senin"
@@ -139,7 +143,7 @@ function Hero() {
               <Button
                 radius="sm"
                 color={isServiceOpen ? "success" : "danger"}
-                className="text-white font-semibold"
+                className="text-white font-semibold z-0"
               >
                 {isServiceOpen ? (
                   <p id="tombol-washtop-buka">Washtop Buka</p>
@@ -195,13 +199,43 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className="w-full h-full flex justify-center pt-8 sm:pt-0 md:pt-0 lg:pt-0">
-        <Image
-          isZoomed
-          className="object-cover h-96 w-full z-0"
-          src="https://picsum.photos/800/400"
-        />
-      </div>
+      <div className="carousel w-full pt-8 sm:pt-0 md:pt-0 lg:pt-0">
+          <div id="slide1" className="carousel-item relative w-full">
+            <img src={Picshero1} className="w-full object-cover h-[426px] rounded-lg" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="btn btn-circle">❮</a> 
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item relative w-full">
+            <img src={Picshero2} className="w-full object-cover h-[426px] rounded-lg" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" className="btn btn-circle">❮</a> 
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+            <img src={Picshero3} className="w-full object-cover h-[426px] rounded-lg" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" className="btn btn-circle">❮</a> 
+              <a href="#slide4" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+            <img src={Picshero4} className="w-full object-cover h-[426px] rounded-lg" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" className="btn btn-circle">❮</a> 
+              <a href="#slide5" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide5" className="carousel-item relative w-full">
+            <img src={Picshero5} className="w-full object-cover h-[426px] rounded-lg" />
+            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" className="btn btn-circle">❮</a> 
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
     </section>
   );
 }

@@ -147,7 +147,7 @@ export default function Header() {
             Keunggulan
           </a>
           <a
-            href="/#info"
+            href="/#informasi"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Informasi
@@ -234,7 +234,7 @@ export default function Header() {
                 </a>
                 <a
                   onClick={() => setMobileMenuOpen(false)}
-                  href="/#info"
+                  href="/#informasi"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Informasi
