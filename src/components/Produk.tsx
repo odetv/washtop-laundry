@@ -867,7 +867,7 @@ export default function App() {
                   Batal
                 </Button>
                 <Button color="primary" onPress={onClose}>
-                  Order Sekarang
+                  <a href={"https://wa.me/6282145555566?text=Halo Washtop Laundry Express. Saya ingin Laundry "+selectedItem?.title+"."} target="_blank" rel="noopener noreferrer">Order Sekarang</a>
                 </Button>
               </ModalFooter>
             </>

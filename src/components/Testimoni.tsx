@@ -26,7 +26,7 @@ function Testimoni() {
         </p>
         <div className="flex justify-center">
             <Button color="danger">
-                Tonton Video Reviews
+                Tonton Video Reviews <span aria-hidden="true">&rarr;</span>
             </Button>
         </div>
         
