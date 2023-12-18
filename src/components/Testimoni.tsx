@@ -1,10 +1,34 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Button } from '@nextui-org/react';
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Accordion, AccordionItem} from "@nextui-org/react";
+import VidReviewUMKM from "../assets/videos/testimoni/video-review-UMKM.mp4";
 
 function Testimoni() {
-
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    const defaultContent = (
+        <div>
+          <p>
+            🌟 REVIEW UMKM WASHTOP LAUNDRY EXPRESS SINGARAJA 🌟
+          </p><br/>
+          <p>
+            Halo teman-teman Singaraja 👋
+          </p>
+          <p>
+            Kali ini aku ingin memperkenalkan UMKM lokal yang lokasinya deket dari Kampus Undiksha yaitu Washtop Laundry Express. UMKM menyediakan jasa laundry di Singaraja, yang selalu memberikan layanan terbaik untuk pakaian pelanggannya. Dengan komitmen terhadap kualitas dan pelayanan terbaik, Washtop Laundry Express kini telah menjadi pilihan terbaik bagi ingin mencuci pakaian dengan cepat dan bersih.
+          </p><br/>
+          <p>
+            📍Alamat : Jl. Nusa Indah No.21, Kaliuntu, Kec. Buleleng, Kabupaten Buleleng, Bali 81116 ☎ Kontak : 088987177994 🕒 Operasional : Senin-Minggu (08:00 - 21:00 WITA)
+          </p><br/>
+          <p>
+            Jadi tunggu apa lagi? Buruan datang ke Washtop Laundry Express Singaraja 🙌
+          </p>
+          <p>
+            Selain bikin baju kalian bersih, harganya juga ramah di kantong mulai dari 4 ribuan aja di jamin baju kalian bakal keliatan kinclong tanpa bikin kantong bolong.
+          </p>
+        </div>
+      );
+      
   const settings = {
     dots: true,
     infinite: true,
@@ -25,11 +49,10 @@ function Testimoni() {
           Pelanggan kami merasa puas dengan layanan kami.
         </p>
         <div className="flex justify-center">
-            <Button color="danger">
+            <Button onPress={onOpen} color="danger">
                 Tonton Video Reviews <span aria-hidden="true">&rarr;</span>
             </Button>
         </div>
-        
         <Slider {...settings}>
             <div id="testimoni1" className="text-center">
             <div>
@@ -352,6 +375,31 @@ function Testimoni() {
             </div>
             </div>
         </Slider>
+        <Modal isOpen={isOpen} backdrop="blur" scrollBehavior="inside" placement="bottom-center" onOpenChange={onOpenChange} isDismissable={false}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col">Review Washtop Laundry Express</ModalHeader>
+              <ModalBody className="flex justify-center items-center">
+              <video autoPlay controls width="70%" className="videoPlayer" src={VidReviewUMKM}></video>
+              <Accordion>
+                <AccordionItem key="1" aria-label="Deskripsi" title="Deskripsi">
+                    {defaultContent}
+                </AccordionItem>
+                </Accordion>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Action
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </section>
   );
 }
