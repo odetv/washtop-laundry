@@ -1,6 +1,6 @@
 function Informasi() {
     return (
-      <section id="informasi" className="flex max-w-7xl mx-auto flex-col pb-28">
+      <section id="informasi" className="flex max-w-7xl mx-auto flex-col pb-20">
         <h1 className="text-center font-bold text-3xl mb-3">
            Informasi
         </h1>
@@ -15,13 +15,13 @@ function Informasi() {
                 ></iframe>
             <div className="bg-white relative text-sm flex flex-wrap py-3 rounded shadow-2xl items-center mt-80">
                 <div className="lg:w-1/2 px-6">
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest">ALAMAT</h2>
+                    <h2 className="title-font font-semibold text-gray-900">ALAMAT</h2>
                     <p className="mt-1">Washtop Laundry Express Singaraja Bali</p>
                 </div>
                 <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest">WHATSAPP</h2>
+                    <h2 className="title-font font-semibold text-gray-900">WHATSAPP</h2>
                     <a href="https://wa.me/6282145555566/" target="_blank" className="leading-relaxed">082145555566</a>
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest mt-4">INSTAGRAM</h2>
+                    <h2 className="title-font font-semibold text-gray-900 mt-4">INSTAGRAM</h2>
                     <a href="https://instagram.com/washtoplaundryexpress/" target="_blank" className="leading-relaxed">@washtoplaundryexpress</a>
                 </div>
             </div>
