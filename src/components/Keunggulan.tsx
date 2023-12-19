@@ -10,7 +10,7 @@ function Keunggulan() {
           Keunggulan Laundry Kami
         </h1>
         <p className="text-center mb-6">
-          Melayani kebutuhan laundry Anda dengan cepat, nyaman, dan berkualitas.
+          Melayani kebutuhan laundry Anda dengan nyaman, cepat, dan berkualitas.
         </p>
         <div className="flex flex-col justify-center items-center gap-4 sm:flex-row md:flex-row lg:flex-row xl:flex-row">
             <Card className="max-w-[368px] p-3 z-0">

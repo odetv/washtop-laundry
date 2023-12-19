@@ -201,35 +201,35 @@ function Hero() {
       </div>
       <div className="carousel w-full pt-8 sm:pt-0 md:pt-0 lg:pt-0">
           <div id="slide1" className="carousel-item relative w-full">
-            <img src={Picshero1} className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
+            <img src={Picshero1} loading="lazy" className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" className="btn btn-circle opacity-50">❮</a> 
               <a href="#slide2" className="btn btn-circle opacity-50">❯</a>
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
-            <img src={Picshero2} className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
+            <img src={Picshero2} loading="lazy" className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" className="btn btn-circle opacity-50">❮</a> 
               <a href="#slide3" className="btn btn-circle opacity-50">❯</a>
             </div>
           </div>
           <div id="slide3" className="carousel-item relative w-full">
-            <img src={Picshero3} className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
+            <img src={Picshero3} loading="lazy" className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" className="btn btn-circle opacity-50">❮</a> 
               <a href="#slide4" className="btn btn-circle opacity-50">❯</a>
             </div>
           </div>
           <div id="slide4" className="carousel-item relative w-full">
-            <img src={Picshero4} className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
+            <img src={Picshero4} loading="lazy" className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle opacity-50">❮</a> 
               <a href="#slide5" className="btn btn-circle opacity-50">❯</a>
             </div>
           </div>
           <div id="slide5" className="carousel-item relative w-full">
-            <img src={Picshero5} className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
+            <img src={Picshero5} loading="lazy" className="w-full object-cover h-[278px] sm:h-[426px] md:h-[426px] lg:h-[426px] xl:h-[426px] rounded-lg" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" className="btn btn-circle opacity-50">❮</a> 
               <a href="#slide1" className="btn btn-circle opacity-50">❯</a>
