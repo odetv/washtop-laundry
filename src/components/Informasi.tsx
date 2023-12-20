@@ -1,26 +1,32 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Informasi() {
     const form = useRef<HTMLFormElement | null>(null);
+    const notifySuccess = () => {
+      toast.success("Pesan Berhasil Terkirim 👌", { autoClose: 5000 });
+    };
+  
+    const notifyError = () => {
+      toast.error("Gagal Mengirim Pesan 😔", { autoClose: 5000 });
+    };
 
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
     
-        if (form.current) {
-            emailjs
-              .sendForm('service_eym8k1i', 'template_afo40a2', form.current, '6xddWmyE6VKHfojB3')
-              .then(
-                (result) => {
-                  console.log('Email berhasil terkirim!', result.status, result.text);
-                },
-                (error) => {
-                  console.error('Gagal mengirim email:', error.text);
-                }
-              );
-            form.current.reset();
-          }
-      };
+      if (form.current) {
+        try {
+          await emailjs.sendForm('service_eym8k1i', 'template_afo40a2', form.current, '6xddWmyE6VKHfojB3');
+          form.current.reset();
+          notifySuccess();
+        } catch (error) {
+          notifyError();
+        }
+      }
+    };
+    
 
     return (
       <section id="informasi" className="flex max-w-7xl mx-auto flex-col pb-20">
@@ -40,7 +46,7 @@ function Informasi() {
                 <div className="lg:w-1/2 px-6">
                     <h2 className="title-font font-semibold text-gray-900">ALAMAT</h2>
                     <a
-              className="mt-1 text-tiny sm:text-sm md:text-sm lg:text-sm xl:text-sm"
+              className="mt-1 text-tiny sm:text-sm md:text-sm lg:text-sm xl:text-sm hover:text-blue-800 transition-all ease-in-out"
               href="https://maps.app.goo.gl/hZ3m6FEWfknbRrBi6"
               target="_blank"
             >
@@ -48,13 +54,13 @@ function Informasi() {
               Buleleng, Bali 81116
             </a>
               <h2 className="title-font font-semibold text-gray-900 mt-4">WHATSAPP</h2>
-                    <a href="https://wa.me/6282145555566/" target="_blank" className="leading-relaxed">082145555566</a>
+                    <a href="https://wa.me/6282145555566/" target="_blank" className="leading-relaxed hover:text-blue-800 transition-all ease-in-out">082145555566</a>
                 </div>
                 <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                     <h2 className="title-font font-semibold text-gray-900">INSTAGRAM</h2>
-                    <a href="https://instagram.com/washtoplaundryexpress/" target="_blank" className="leading-relaxed">@washtoplaundryexpress</a>
+                    <a href="https://instagram.com/washtoplaundryexpress/" target="_blank" className="leading-relaxed hover:text-blue-800 transition-all ease-in-out">@washtoplaundryexpress</a>
                     <h2 className="title-font font-semibold text-gray-900 mt-4">EMAIL</h2>
-                    <a href="mailto:washtoplaundryexpress@gmail.com" target="_blank" className="leading-relaxed">washtoplaundryexpress@gmail.com</a>
+                    <a href="mailto:washtoplaundryexpress@gmail.com" target="_blank" className="leading-relaxed hover:text-blue-800 transition-all ease-in-out">washtoplaundryexpress@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -77,6 +83,7 @@ function Informasi() {
             </div>
             <button type="submit" className="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-lg transition-all ease-in-out font-medium">Kirim</button>
             </form>
+            <ToastContainer autoClose={5000} />
             </div>
     </div>
 </section>

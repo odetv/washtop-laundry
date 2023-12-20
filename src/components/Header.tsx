@@ -74,12 +74,12 @@ export default function Header() {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
             href="/#"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-800 transition-all ease-in-out"
           >
             Beranda
           </a>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-blue-800 transition-all ease-in-out">
               Produk
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -112,7 +112,7 @@ export default function Header() {
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 hover:text-blue-800 transition-all ease-in-out"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -130,7 +130,7 @@ export default function Header() {
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-blue-500 "
                     >
                       <item.icon
-                        className="h-5 w-5 flex-none text-gray-400 "
+                        className="h-5 w-5 flex-none text-gray-400"
                         aria-hidden="true"
                       />
                       {item.name}
@@ -142,13 +142,13 @@ export default function Header() {
           </Popover>
           <a
             href="/#keunggulan"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-800 transition-all ease-in-out"
           >
             Keunggulan
           </a>
           <a
             href="/#informasi"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-800 transition-all ease-in-out"
           >
             Informasi
           </a>
@@ -156,7 +156,7 @@ export default function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             to={location.pathname === "/login" ? "/daftar" : "/login"}
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-800 transition-all ease-in-out"
           >
             {headerText} <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -192,14 +192,14 @@ export default function Header() {
                 <a
                   onClick={() => setMobileMenuOpen(false)}
                   href="/#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out"
                 >
                   Beranda
                 </a>
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out">
                         Produk
                         <ChevronDownIcon
                           className={classNames(
@@ -216,7 +216,7 @@ export default function Header() {
                             as="a"
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -228,14 +228,14 @@ export default function Header() {
                 <a
                   onClick={() => setMobileMenuOpen(false)}
                   href="/#keunggulan"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out"
                 >
                   Keunggulan
                 </a>
                 <a
                   onClick={() => setMobileMenuOpen(false)}
                   href="/#informasi"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out"
                 >
                   Informasi
                 </a>
@@ -244,7 +244,7 @@ export default function Header() {
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   to={location.pathname === "/login" ? "/daftar" : "/login"}
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-800 transition-all ease-in-out"
                 >
                   {headerText} <span aria-hidden="true">&rarr;</span>
                 </Link>

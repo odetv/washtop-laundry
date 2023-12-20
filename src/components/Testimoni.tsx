@@ -46,10 +46,10 @@ function Testimoni() {
           Testimoni Pelanggan
         </h1>
         <p className="text-center mb-6">
-          Pelanggan kami merasa puas dengan layanan kami.
+          Pelanggan kami merasa puas dengan Layanan Kami
         </p>
         <div className="flex justify-center">
-            <Button onPress={onOpen} color="danger">
+            <Button onPress={onOpen} color="danger" className="hover:bg-red-800 transition-all ease-in-out">
                 Tonton Video Reviews <span aria-hidden="true">&rarr;</span>
             </Button>
         </div>
@@ -57,7 +57,7 @@ function Testimoni() {
             <div id="testimoni1" className="text-center">
             <div>
                 <blockquote
-                className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                className="flex h-full flex-col justify-between bg-white p-6 sm:p-8 lg:p-12"
                 >
                 <div>
                     <div className="flex gap-0.5 text-green-500 justify-center">
@@ -135,7 +135,7 @@ function Testimoni() {
             <div id="testimoni2" className="text-center">
             <div className="keen-slider__slide">
                 <blockquote
-                className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                className="flex h-full flex-col justify-between bg-white p-6 sm:p-8 lg:p-12"
                 >
                 <div>
                     <div className="flex gap-0.5 text-green-500 justify-center">
@@ -213,7 +213,7 @@ function Testimoni() {
             <div id="testimoni3" className="text-center">
             <div>
                 <blockquote
-                className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                className="flex h-full flex-col justify-between bg-white p-6 sm:p-8 lg:p-12"
                 >
                 <div>
                     <div className="flex gap-0.5 text-green-500 justify-center">
@@ -291,7 +291,7 @@ function Testimoni() {
             <div id="testimoni4" className="text-center">
             <div className="keen-slider__slide">
                 <blockquote
-                className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                className="flex h-full flex-col justify-between bg-white p-6 sm:p-8 lg:p-12"
                 >
                 <div>
                     <div className="flex gap-0.5 text-green-500 justify-center">
@@ -369,7 +369,7 @@ function Testimoni() {
             <div id="testimoni5" className="text-center">
             <div className="keen-slider__slide">
                 <blockquote
-                className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                className="flex h-full flex-col justify-between bg-white p-6 sm:p-8 lg:p-12"
                 >
                 <div>
                     <div className="flex gap-0.5 text-green-500 justify-center">

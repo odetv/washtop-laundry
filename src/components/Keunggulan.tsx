@@ -24,7 +24,7 @@ function Keunggulan() {
                     />
                     <div className="flex flex-col">
                     <p className="text-lg font-bold pb-2">Nyaman</p>
-                    <p>Dapatkan layanan laundry yang nyaman.</p>
+                    <p>Dapatkan pelayanan laundry yang nyaman.</p>
                     </div>
                 </CardHeader>
             </Card>
@@ -39,7 +39,7 @@ function Keunggulan() {
                     />
                     <div className="flex flex-col">
                     <p className="text-lg font-bold pb-2">Cepat</p>
-                    <p>Proses laundry cepat mengutamakan ketepatan waktu.</p>
+                    <p>Laundry cepat dengan kehandalan Satu Mesin Satu Pelanggan.</p>
                     </div>
                 </CardHeader>
             </Card>
@@ -54,7 +54,7 @@ function Keunggulan() {
                     />
                     <div className="flex flex-col">
                     <p className="text-lg font-bold pb-2">Berkualitas</p>
-                    <p>Alat dan Bahan yang berkualitas untuk kepuasan pelanggan.</p>
+                    <p>Alat dan Bahan yang digunakan berkualitas untuk kepuasan pelanggan.</p>
                     </div>
                 </CardHeader>
             </Card>

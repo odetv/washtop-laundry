@@ -15,6 +15,7 @@ function SignIn() {
                 Username
               </label>
               <input
+                required
                 type="text"
                 id="username"
                 name="username"
@@ -27,6 +28,7 @@ function SignIn() {
                 Password
               </label>
               <input
+                required
                 type="password"
                 id="password"
                 name="password"

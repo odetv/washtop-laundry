@@ -15,6 +15,7 @@ function SignUp() {
                 Nama
               </label>
               <input
+                required
                 type="text"
                 id="name"
                 name="name"
@@ -27,7 +28,8 @@ function SignUp() {
                 Email
               </label>
               <input
-                type="text"
+                required
+                type="email"
                 id="email"
                 name="email"
                 className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
@@ -39,6 +41,7 @@ function SignUp() {
                 Password
               </label>
               <input
+                required
                 type="password"
                 id="password"
                 name="password"
