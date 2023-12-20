@@ -17,6 +17,7 @@
     "@nextui-org/react": "^2.2.9",
     "@nextui-org/system": "^2.0.15",
     "@nextui-org/theme": "^2.1.17",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.16.5",
     "heroicons": "^2.0.18",
     "heroicons-react": "^1.4.1",
@@ -32,6 +33,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@types/node": "^20.10.5",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-slick": "^0.23.13",

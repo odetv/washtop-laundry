@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import config from "../../config";
 
 function Informasi() {
     const form = useRef<HTMLFormElement | null>(null);
@@ -13,12 +14,12 @@ function Informasi() {
       toast.error("Gagal Mengirim Pesan 😔", { autoClose: 5000 });
     };
 
-    const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {  
       e.preventDefault();
     
       if (form.current) {
         try {
-          await emailjs.sendForm('service_eym8k1i', 'template_afo40a2', form.current, '6xddWmyE6VKHfojB3');
+          await emailjs.sendForm(config.EMAILJS_SERVICE_ID, config.EMAILJS_TEMPLATE_ID, form.current, config.EMAILJS_API_KEY);
           form.current.reset();
           notifySuccess();
         } catch (error) {
