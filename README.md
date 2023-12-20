@@ -42,7 +42,7 @@ Untuk dapat menjalankan project pada firebase dibutuhkan token yang didapat dari
 
 ## Teknologi
 
-**Client:** Vite, React, TypeScript, TailwindCSS
+**Client:** Vite, React, TypeScript, TailwindCSS, NextUI, EmailJS
 
 **Server:** Firebase
 
